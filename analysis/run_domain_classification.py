@@ -1,6 +1,7 @@
 import json
 from pathlib import Path
 from domain_classifier import classify_domain
+import time
 
 
 DATA_DIR = Path("../data/youtube_raw")
@@ -38,6 +39,7 @@ def run_domain_classification():
 
         classified += 1
         print(f"→ {result['domain']} ({result['confidence']})")
+        time.sleep(7)
 
     print("\n=== SUMMARY ===")
     print(f"Total files      : {total}")

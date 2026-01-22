@@ -1,48 +1,54 @@
+import os
 import json
-from openai import OpenAI
+from google import genai
+from google.genai import types
 
-client = OpenAI()
+client = genai.Client(api_key="AIzaSyBkitDMvFodKpKYOT1c878umPIytDEGxbU")
+
+
 
 SYSTEM_PROMPT = """
 You are a financial content classifier.
 
 Classify the transcript into exactly ONE category:
 
-- crypto: cryptocurrencies, Bitcoin, Ethereum, altcoins, funding rates, open interest, exchanges, on-chain, crypto markets
-- macro: stocks, bonds, interest rates, inflation, CPI, Fed, recession, DXY, global economy
-- random: motivation, personal talk, clickbait, unrelated content
+- crypto
+- macro
+- random
 
-Respond ONLY with valid JSON.
+Return STRICT JSON only like:
+{"domain": "crypto", "confidence": 0.95}
 """
 
 
 def classify_domain(transcript: str) -> dict:
-    response = client.chat.completions.create(
-        model="gpt-4o-mini",
-        messages=[
-            {"role": "system", "content": SYSTEM_PROMPT},
-            {
-                "role": "user",
-                "content": f"""
+    prompt = f"""
 Transcript:
 \"\"\"
 {transcript[:6000]}
 \"\"\"
-
-Return JSON exactly like:
-{{"domain": "crypto|macro|random", "confidence": 0.0}}
 """
-            }
-        ],
-        temperature=0,
+
+    response = client.models.generate_content(
+        model="gemini-2.5-flash-lite",
+        config=types.GenerateContentConfig(
+            temperature=0,
+            system_instruction=SYSTEM_PROMPT
+        ),
+        contents=prompt,
     )
 
-    message = response.choices[0].message.content
+    if not response.text:
+        raise RuntimeError("Empty response from Gemini")
 
-    if not message:
-        raise RuntimeError("Empty response from OpenAI")
+    text = response.text.strip()
+
+    # Gemini sometimes wraps JSON in backticks
+    if text.startswith("```"):
+        text = text.strip("`")
+        text = text.replace("json", "").strip()
 
     try:
-        return json.loads(message)
-    except json.JSONDecodeError as e:
-        raise RuntimeError(f"Invalid JSON from model: {message}") from e
+        return json.loads(text)
+    except json.JSONDecodeError:
+        raise RuntimeError(f"Invalid JSON from Gemini:\n{text}")
