@@ -18,5 +18,5 @@ def fetch_transcript(video_id: str) -> str | None:
         return " ".join(seg.text for seg in segments)
 
     except Exception as e:
-        print(f"[Transcript Error] {video_id}: {e}")
+        print(f"[Transcript Error] {video_id}")
         return None

@@ -1,7 +1,7 @@
-from qdrant_client import QdrantClient
+import dateparser
+from datetime import datetime
 
-client = QdrantClient(host="localhost" , port = 6333)
-
-collections = client.get_collections()
-print(collections)
-
+query = "how was bitcoin 5 days ago?"
+# 'settings' helps handle "yesterday" relative to now
+extracted_date = dateparser.parse("3 days ago", settings={'RELATIVE_BASE': datetime.now()})
+print(extracted_date)
