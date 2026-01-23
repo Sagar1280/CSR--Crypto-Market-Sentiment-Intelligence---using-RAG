@@ -2,8 +2,12 @@
   "video_id": "p8_8_sZJdR4",
   "title": "Happy New Year Bitcoin!",
   "channel": "Benjamin Cowen",
-  "published_at": "2026-01-02T01:32:00+00:00",
+  "published_at": 1767317520.0,
+  "published_at_readable": "2026-01-02T01:32:00+00:00",
   "url": "https://www.youtube.com/watch?v=p8_8_sZJdR4",
+  "is_live": false,
+  "was_live": false,
+  "fetched_at": "2026-01-21T22:42:15.356581+00:00",
   "chunks": [
     {
       "chunk_id": 0,

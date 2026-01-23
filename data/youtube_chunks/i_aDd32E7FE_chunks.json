@@ -2,8 +2,12 @@
   "video_id": "i_aDd32E7FE",
   "title": "Unemployment Rate Drops to 4.4%",
   "channel": "Benjamin Cowen",
-  "published_at": "2026-01-09T21:58:05+00:00",
+  "published_at": 1767995885.0,
+  "published_at_readable": "2026-01-09T21:58:05+00:00",
   "url": "https://www.youtube.com/watch?v=i_aDd32E7FE",
+  "is_live": false,
+  "was_live": false,
+  "fetched_at": "2026-01-21T22:41:35.435394+00:00",
   "chunks": [
     {
       "chunk_id": 0,

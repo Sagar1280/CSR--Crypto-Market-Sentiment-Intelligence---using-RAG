@@ -2,8 +2,12 @@
   "video_id": "vuwmJsNsONk",
   "title": "Ethereum: Logarithmic Regression",
   "channel": "Benjamin Cowen",
-  "published_at": "2025-12-31T20:24:11+00:00",
+  "published_at": 1767212651.0,
+  "published_at_readable": "2025-12-31T20:24:11+00:00",
   "url": "https://www.youtube.com/watch?v=vuwmJsNsONk",
+  "is_live": false,
+  "was_live": false,
+  "fetched_at": "2026-01-21T22:42:22.194910+00:00",
   "chunks": [
     {
       "chunk_id": 0,

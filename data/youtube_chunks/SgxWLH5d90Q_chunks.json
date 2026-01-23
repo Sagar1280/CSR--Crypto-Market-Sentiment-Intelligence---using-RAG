@@ -2,8 +2,12 @@
   "video_id": "SgxWLH5d90Q",
   "title": "WARNING: If This Signal Confirms Then Get Out!",
   "channel": "Crypto Banter",
-  "published_at": "2026-01-16T07:22:47+00:00",
+  "published_at": 1768548167.0,
+  "published_at_readable": "2026-01-16T07:22:47+00:00",
   "url": "https://www.youtube.com/watch?v=SgxWLH5d90Q",
+  "is_live": false,
+  "was_live": true,
+  "fetched_at": "2026-01-21T22:20:46.343785+00:00",
   "chunks": [
     {
       "chunk_id": 0,

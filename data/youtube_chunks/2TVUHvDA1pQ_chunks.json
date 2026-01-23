@@ -2,8 +2,12 @@
   "video_id": "2TVUHvDA1pQ",
   "title": "They KNOW Which Cryptos YOU HOLD!!",
   "channel": "Coin Bureau",
-  "published_at": "2026-01-18T12:45:00+00:00",
+  "published_at": 1768740300.0,
+  "published_at_readable": "2026-01-18T12:45:00+00:00",
   "url": "https://www.youtube.com/watch?v=2TVUHvDA1pQ",
+  "is_live": false,
+  "was_live": false,
+  "fetched_at": "2026-01-21T22:31:03.135381+00:00",
   "chunks": [
     {
       "chunk_id": 0,

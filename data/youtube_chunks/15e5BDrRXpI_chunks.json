@@ -2,8 +2,12 @@
   "video_id": "15e5BDrRXpI",
   "title": "This Is Bitcoin's Final Target Before It Dumps",
   "channel": "Coin Bureau Trading",
-  "published_at": "2026-01-16T05:34:08+00:00",
+  "published_at": 1768541648.0,
+  "published_at_readable": "2026-01-16T05:34:08+00:00",
   "url": "https://www.youtube.com/watch?v=15e5BDrRXpI",
+  "is_live": false,
+  "was_live": false,
+  "fetched_at": "2026-01-21T22:35:10.313135+00:00",
   "chunks": [
     {
       "chunk_id": 0,

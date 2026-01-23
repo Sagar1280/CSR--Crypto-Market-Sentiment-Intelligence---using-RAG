@@ -2,8 +2,12 @@
   "video_id": "lL5f-4Sg8Hk",
   "title": "A Deeply Concerning Chart for Stocks",
   "channel": "Benjamin Cowen",
-  "published_at": "2026-01-20T15:19:45+00:00",
+  "published_at": 1768922385.0,
+  "published_at_readable": "2026-01-20T15:19:45+00:00",
   "url": "https://www.youtube.com/watch?v=lL5f-4Sg8Hk",
+  "is_live": false,
+  "was_live": false,
+  "fetched_at": "2026-01-21T22:42:35.311099+00:00",
   "chunks": [
     {
       "chunk_id": 0,

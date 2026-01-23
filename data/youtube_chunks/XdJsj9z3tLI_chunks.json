@@ -2,8 +2,12 @@
   "video_id": "XdJsj9z3tLI",
   "title": "Gold and the Rotation Trap",
   "channel": "Benjamin Cowen",
-  "published_at": "2026-01-21T20:49:00+00:00",
+  "published_at": 1769028540.0,
+  "published_at_readable": "2026-01-21T20:49:00+00:00",
   "url": "https://www.youtube.com/watch?v=XdJsj9z3tLI",
+  "is_live": false,
+  "was_live": false,
+  "fetched_at": "2026-01-21T22:42:28.747936+00:00",
   "chunks": [
     {
       "chunk_id": 0,

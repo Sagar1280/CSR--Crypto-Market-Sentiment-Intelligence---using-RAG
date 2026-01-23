@@ -2,8 +2,12 @@
   "video_id": "joW6YbFRDI0",
   "title": "Bitcoin: Timing Cycle Bottoms",
   "channel": "Benjamin Cowen",
-  "published_at": "2026-01-19T21:36:27+00:00",
+  "published_at": 1768858587.0,
+  "published_at_readable": "2026-01-19T21:36:27+00:00",
   "url": "https://www.youtube.com/watch?v=joW6YbFRDI0",
+  "is_live": false,
+  "was_live": false,
+  "fetched_at": "2026-01-21T22:40:31.213323+00:00",
   "chunks": [
     {
       "chunk_id": 0,

@@ -2,8 +2,12 @@
   "video_id": "FUig3U0PelQ",
   "title": "Silver Mania!",
   "channel": "Benjamin Cowen",
-  "published_at": "2026-01-14T14:48:31+00:00",
+  "published_at": 1768402111.0,
+  "published_at_readable": "2026-01-14T14:48:31+00:00",
   "url": "https://www.youtube.com/watch?v=FUig3U0PelQ",
+  "is_live": false,
+  "was_live": false,
+  "fetched_at": "2026-01-21T22:40:56.963764+00:00",
   "chunks": [
     {
       "chunk_id": 0,

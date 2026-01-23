@@ -2,8 +2,12 @@
   "video_id": "YA-7M-01d84",
   "title": "Crypto Ghost Town",
   "channel": "Benjamin Cowen",
-  "published_at": "2026-01-13T20:02:48+00:00",
+  "published_at": 1768334568.0,
+  "published_at_readable": "2026-01-13T20:02:48+00:00",
   "url": "https://www.youtube.com/watch?v=YA-7M-01d84",
+  "is_live": false,
+  "was_live": false,
+  "fetched_at": "2026-01-21T22:41:09.710633+00:00",
   "chunks": [
     {
       "chunk_id": 0,

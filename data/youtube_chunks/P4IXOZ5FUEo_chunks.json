@@ -2,8 +2,12 @@
   "video_id": "P4IXOZ5FUEo",
   "title": "Crypto Trading 101 LIVE: The Fundamentals You NEED To Know",
   "channel": "Coin Bureau Trading",
-  "published_at": "2026-01-15T16:01:41+00:00",
+  "published_at": 1768492901.0,
+  "published_at_readable": "2026-01-15T16:01:41+00:00",
   "url": "https://www.youtube.com/watch?v=P4IXOZ5FUEo",
+  "is_live": false,
+  "was_live": true,
+  "fetched_at": "2026-01-21T22:36:48.071105+00:00",
   "chunks": [
     {
       "chunk_id": 0,

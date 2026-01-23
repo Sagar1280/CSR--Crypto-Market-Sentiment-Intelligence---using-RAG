@@ -2,8 +2,12 @@
   "video_id": "IqADDSGQDdo",
   "title": "Bitcoin: The Beauty of Mathematics (Part 66)",
   "channel": "Benjamin Cowen",
-  "published_at": "2026-01-03T03:41:24+00:00",
+  "published_at": 1767411684.0,
+  "published_at_readable": "2026-01-03T03:41:24+00:00",
   "url": "https://www.youtube.com/watch?v=IqADDSGQDdo",
+  "is_live": false,
+  "was_live": false,
+  "fetched_at": "2026-01-21T22:42:08.754360+00:00",
   "chunks": [
     {
       "chunk_id": 0,

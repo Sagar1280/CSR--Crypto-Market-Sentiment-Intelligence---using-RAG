@@ -2,8 +2,12 @@
   "video_id": "PIxHTTD0Zgg",
   "title": "Bitcoin: Dubious Speculation",
   "channel": "Benjamin Cowen",
-  "published_at": "2026-01-08T21:50:46+00:00",
+  "published_at": 1767909046.0,
+  "published_at_readable": "2026-01-08T21:50:46+00:00",
   "url": "https://www.youtube.com/watch?v=PIxHTTD0Zgg",
+  "is_live": false,
+  "was_live": false,
+  "fetched_at": "2026-01-21T22:41:28.968151+00:00",
   "chunks": [
     {
       "chunk_id": 0,

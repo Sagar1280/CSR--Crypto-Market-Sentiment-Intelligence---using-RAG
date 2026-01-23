@@ -2,8 +2,12 @@
   "video_id": "A7YFAwLEMR8",
   "title": "Crypto Just Flipped - Trump Captures Venezuela’s Maduro",
   "channel": "Altcoin Daily",
-  "published_at": "2026-01-04T00:25:17+00:00",
+  "published_at": 1767486317.0,
+  "published_at_readable": "2026-01-04T00:25:17+00:00",
   "url": "https://www.youtube.com/watch?v=A7YFAwLEMR8",
+  "is_live": false,
+  "was_live": false,
+  "fetched_at": "2026-01-21T22:39:41.212424+00:00",
   "chunks": [
     {
       "chunk_id": 0,
