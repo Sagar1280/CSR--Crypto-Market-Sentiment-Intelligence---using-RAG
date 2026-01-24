@@ -5,8 +5,13 @@ from datetime import datetime
 from dateutil import parser
 
 # ===== DIRECTORIES =====
-RAW_DIR = Path("../data/youtube_raw")
-CHUNK_DIR = Path("../data/youtube_chunks")
+
+
+BASE_DIR = Path(__file__).resolve().parent 
+PROJECT_ROOT = BASE_DIR.parent
+
+RAW_DIR = PROJECT_ROOT / "data" / "youtube_raw"
+CHUNK_DIR = PROJECT_ROOT / "data" / "youtube_chunks"
 
 CHUNK_DIR.mkdir(parents=True, exist_ok=True)
 

@@ -2,11 +2,14 @@ from sentence_transformers import SentenceTransformer
 from qdrant_client import QdrantClient
 from datetime import datetime, timedelta, timezone
 from qdrant_client.models import Filter, FieldCondition, Range
+from data.api.live_price import get_live_prices
 
 # ===== CONFIG =====
 COLLECTION_NAME = "csr_youtube_chunks"
 TOP_K = 10
 # ==================
+
+live_price = get_live_prices()
 
 print("Loading embedding model...")
 model = SentenceTransformer("BAAI/bge-small-en")
@@ -106,7 +109,7 @@ def search(query: str):
     if not response.points:
         print("No results found in selected time window.")
         return
-
+ 
     for point in response.points:
         payload = point.payload
 
@@ -119,6 +122,7 @@ def search(query: str):
         print(f"Published: {published_readable}")
         print(f"Preview: {payload.get('text')}...")
         print("-" * 80)
+    print(live_price)
 
 
 # =========================

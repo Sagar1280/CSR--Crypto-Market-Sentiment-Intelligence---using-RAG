@@ -49,7 +49,7 @@ def run_youtube_pipeline():
             print(f"✅ Transcript saved: {video_id}.json")
 
             # ---- Rate limiting ----
-            time.sleep(5)
+            time.sleep(1)
 
         print("-" * 70)
 

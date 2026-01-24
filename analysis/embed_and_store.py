@@ -7,10 +7,14 @@ import uuid
 
 
 # ===== CONFIG =====
-CHUNK_DIR = Path("../data/youtube_chunks")
+BASE_DIR = Path(__file__).resolve().parent
+PROJECT_ROOT = BASE_DIR.parent
+CHUNK_DIR = PROJECT_ROOT / "data" / "youtube_chunks"
+
 COLLECTION_NAME = "csr_youtube_chunks"
-EMBEDDING_DIM = 384
+EMBEDDING_DIM = 384 # BGE Small dimension
 # ==================
+
 
 
 print("Loading embedding model...")
@@ -21,7 +25,7 @@ client = QdrantClient(host="localhost", port=6333)
 
 
 # =========================
-# 🔹 CREATE COLLECTION
+#   CREATE COLLECTION
 # =========================
 
 collections = client.get_collections().collections
