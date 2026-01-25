@@ -1,5 +1,6 @@
 import time
-
+from analysis.chunker import process_all_transcripts
+from analysis.embed_and_store import embed_and_store
 from ingestion.youtube.video_fetcher import fetch_videos_for_channel
 from ingestion.youtube.transcript_fetcher import fetch_transcript
 from config.youtube_channels import YOUTUBE_CHANNELS
@@ -49,7 +50,7 @@ def run_youtube_pipeline():
             print(f"✅ Transcript saved: {video_id}.json")
 
             # ---- Rate limiting ----
-            time.sleep(1)
+            time.sleep(2)
 
         print("-" * 70)
 
@@ -63,5 +64,8 @@ def run_youtube_pipeline():
     print("===========================\n")
 
 
+
 if __name__ == "__main__":
     run_youtube_pipeline()
+    process_all_transcripts()
+    embed_and_store()

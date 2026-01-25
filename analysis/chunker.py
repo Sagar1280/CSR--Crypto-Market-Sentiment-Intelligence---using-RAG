@@ -117,9 +117,3 @@ def process_all_transcripts():
     print("========================\n")
 
 
-# =========================
-# 🔹 ENTRY POINT
-# =========================
-
-if __name__ == "__main__":
-    process_all_transcripts()
